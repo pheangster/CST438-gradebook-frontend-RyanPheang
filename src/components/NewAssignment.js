@@ -65,22 +65,22 @@ class NewAssignment extends Component {
   render() {
       return (
           <div align="left" >
-                <h4>Create a new assignment: </h4>
+                <h2>Create a New Assignment: </h2>
                   <form onSubmit={this.handleSubmit}>
                     <label>
-                      Course Id:
+                      <b>Assignnmet Course ID:</b>
                     </label>
                     <p>
                       <input type="text" name="courseId" value={this.state.courseId} onChange={this.handleChange}/>
                     </p>
                     <label>
-                      Assignment Name:
+                      <b>Assignment Name:</b>
                     </label>
                     <p>
                       <input type="text" name="assignmentName" value={this.state.assignmentName} onChange={this.handleChange}/>
                     </p>
                     <label>
-                      Due Date:
+                      <b>Assignment Due Date:</b>
                     </label>
                     <p>
                       <input type="text" name="dueDate" value={this.state.dueDate} onChange={this.handleChange}/>
@@ -90,7 +90,7 @@ class NewAssignment extends Component {
                     </p>
                     <div>
                     <ToastContainer autoClose={1500} />   
-                  </div>
+                    </div>
                   </form>
           </div>
       )
